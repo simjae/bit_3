@@ -1,0 +1,48 @@
+package study;
+
+class Emp {
+private int emage;
+private String emname;
+private String emfo;
+
+public Emp(int emage, String emname, String emfo) {
+	super();
+	this.emage = emage;
+	this.emname = emname;
+	this.emfo = emfo;
+}
+
+public int getEmage() {
+	return emage;
+}
+
+public void setEmage(int emage) {
+	this.emage = emage;
+}
+
+public String getEmname() {
+	return emname;
+}
+
+public void setEmname(String emname) {
+	this.emname = emname;
+}
+
+public String getEmfo() {
+	return emfo;
+}
+
+public void setEmfo(String emfo) {
+	this.emfo = emfo;
+}
+
+@Override
+public String toString() {
+	return "Emp [emage=" + emage + ", emname=" + emname + ", emfo=" + emfo + "]";
+}
+
+
+
+}
+
+

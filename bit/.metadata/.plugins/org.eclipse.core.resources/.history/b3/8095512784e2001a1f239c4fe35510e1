@@ -1,0 +1,26 @@
+package defualt_package;
+/*
+ 
+ String 클래스 (문자열)
+ String 수 많은 함수 ,,, 문자열을 조작 (자르고 , 합치고)
+ String >> static 함수 + 일반함수 
+ 15개 ~ 20개 함수 암기 
+ */
+
+public class Ex05_String_Class {
+
+	public static void main(String[] args) {
+		String str = "";// 문자열의 초기화 >>null;
+		//사용방법: int , double 처럼 사용
+				
+		
+		String stri ="홍길동";
+		System.out.println(stri.length());
+		System.out.println(stri.toString());
+		
+		
+		
+		
+	}
+
+}

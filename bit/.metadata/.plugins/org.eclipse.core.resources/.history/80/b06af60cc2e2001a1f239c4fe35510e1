@@ -1,0 +1,26 @@
+package study;
+
+
+class Person {
+
+
+	
+}
+
+
+
+
+
+
+
+public class PrivatePerson {
+	String name = "simjea";
+	int age = 
+	
+
+	public static void main(String[] args) {
+		Person person = new Person();
+
+	}
+
+}

@@ -1,0 +1,38 @@
+package defualt_package;
+
+import java.util.Stack;
+
+import javax.activation.MailcapCommandMap;
+import javax.xml.soap.SAAJResult;
+
+import kr.or.bit.MyStack;
+
+public class Ex05_Stack_Collection {
+
+	public static void main(String[] args) {
+		//JAVA API stack 자료 구조 제공
+		
+		
+		Stack<E> s = new Stack();
+		s.push("A");
+		s.push("B");
+		System.out.println(s.pop);
+
+	MyStack my =new MyStack(5);
+		System.out.println(my.full());
+		my.push(10);
+		my.push(20);
+		my.push(30);
+		System.out.println(my.full());
+		System.out.println(my.pop());
+		System.out.println(my.pop());
+		System.out.println(my.pop());
+
+
+		
+	
+	
+	
+	}
+
+}

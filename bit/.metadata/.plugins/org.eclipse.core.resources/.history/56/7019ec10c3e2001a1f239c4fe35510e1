@@ -1,0 +1,20 @@
+package study;
+
+
+import java.util.Scanner;
+
+public class PrivatePerson {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner();
+		Person person = new Person();
+		
+		System.out.println(person.getAge());
+		System.out.println(person.getName());
+		System.out.println();
+		
+		
+
+	}
+
+}

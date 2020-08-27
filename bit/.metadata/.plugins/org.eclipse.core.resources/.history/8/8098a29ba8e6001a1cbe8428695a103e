@@ -1,0 +1,15 @@
+package Main;
+
+import study.Emp;
+
+public class Array {
+
+	public static void main(String[] args) {
+	//사원 1명을 출력하세요
+	Emp emp =new Emp(26,"심재형","IT");
+	System.out.println(emp);
+	
+
+	}
+
+}

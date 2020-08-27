@@ -1,0 +1,31 @@
+package Main;
+
+import java.util.ArrayList;
+
+import study.Emp;
+
+public class Array {
+
+	public static void main(String[] args) {
+	//사원 1명을 출력하세요
+	Emp emp =new Emp(26,"심재형","IT","남정내");
+	System.out.println(emp);
+	
+	//배열을 이용해서 사원 2명을 출력하세요
+	Emp[] emplist = {new Emp(27, "박범", "It","남정내"), new Emp(30, "전선규", "IT","아들래미")};
+	System.out.println(emplist.toString());
+	for(Emp e:emplist ) {
+		System.out.println(e.toString());
+	}
+	ArrayList arraylist = new ArrayList();
+	arraylist.add(new Emp(24,"오정은","IT","가스나"));
+	arraylist.add(new Emp(29,"안가람","IT","엄마"));
+	System.out.println(arraylist.size());
+	for(int i = 0 ; i<arraylist.size(); i ++) {
+		System.out.println(arraylist.toString());
+	}
+
+
+	}
+
+}

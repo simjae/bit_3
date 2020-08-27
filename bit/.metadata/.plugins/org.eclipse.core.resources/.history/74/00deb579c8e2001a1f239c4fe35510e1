@@ -1,0 +1,117 @@
+package study;
+
+import java.io.ObjectInputStream.GetField;
+import java.util.Scanner;
+
+class Person {
+	private String name ="심재";
+
+	private int age = 26;
+	private boolean hasCat;
+	private int phoneNums [] = new int[]{6,0,4,1,};//배열은 해야함 
+
+	
+	
+
+		
+		
+	
+	
+		
+
+	
+	public void printName() {
+		 System.out.println(this.name);
+	}
+	
+	public int calculateBirthYear() {
+		int presentYear = 2020;
+		this.age = presentYear - this.age+1;
+
+		return age;
+		
+	}
+
+	public boolean printHasCat( boolean userinput) {
+	
+		if(userinput == false) {
+		System.out.println("분양받으세요 ");
+		
+			
+		}else{
+			System.out.println("이쁘겠오 ");
+		}
+		
+		return userinput;
+	}
+	
+		
+		
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public boolean isHasCat() {
+		return hasCat;
+	}
+
+	public void setHasCat(boolean hasCat) {
+		this.hasCat = hasCat;
+	}
+
+	public int[] getPhoneNums() {
+		int sum = 0;
+		for(int i = 0 ; i <phoneNums.length; i++) {
+			sum  += phoneNums[i]  ; 
+		System.out.println(sum+"d");
+		}
+		
+		return phoneNums;
+	}
+
+	public void setPhoneNums(int[] phoneNums) {
+		this.phoneNums = phoneNums;
+	}
+
+	public int addAll() {
+		int sum = 0;
+		for(int i = 0 ; i <phoneNums.length; i++) {
+			sum  += phoneNums[i]  ; 
+		System.out.println(sum+"d");
+		}
+		return sum ;
+		
+	}
+
+
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		Person person = new Person();
+		Scanner sc = new Scanner(System.in);
+		boolean userInput= sc.nextBoolean();
+		person.printName();
+		System.out.println("2번문제 : "+ person.calculateBirthYear());
+	
+		System.out.println("3번 문제 : " + person.printHasCat(userInput));
+		System.out.println("3번 문제 : " + person.addAll());
+		
+	}
+
+}

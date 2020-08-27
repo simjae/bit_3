@@ -1,0 +1,9 @@
+package defualt_package;
+
+public class Empdata {
+ private String name ;
+ private int [] number;
+ private Ar
+	
+}
+}

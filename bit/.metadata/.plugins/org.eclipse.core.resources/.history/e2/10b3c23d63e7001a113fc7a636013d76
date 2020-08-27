@@ -1,0 +1,75 @@
+package defualt_package;
+
+import java.util.ArrayList;
+
+import defualt_package.MyGen.Person;
+
+/*b 
+ Today Point 
+ Generic jdk 1.5
+ c# , java 필수기능
+ 
+ 
+colloction 클래스 >> 데이터 기본저장공간 : Object
+
+
+1.Object 타입 저항 ...>>타입..문제 >> 타입 강제 (객체 생성시 타입 )>> 제너
+2.타입 안전성 (타입강제)
+3.강제 형변환(casting): (car)object (x)
+
+클래스 설계시에 제너릭 적용코드를 만들어놓음
+
+ */
+class MyGen<T> {
+	T obj;
+
+	void add(T obj) {
+		this.obj = obj;
+	}
+
+	T get() {
+		return this.obj;
+
+	}
+
+	class Person extends Object {
+		int age = 100;
+
+	}
+}
+
+public class Exo06_Generic {
+
+	public static void main(String[] args) {
+		MyGen<String> myGen = new MyGen<String>();
+		myGen.add("문자열");
+		String str = myGen.get();
+		System.out.println(str);
+
+		ArrayList list = new ArrayList();
+
+		list.add(10);
+		list.add(new Person());
+		list.add("홍길동");
+
+		for (Object obj : list) {
+			// person 객체는 나이 출력하고 나머지는 값을 출력
+			// System.out.println(obj);
+			if (obj instanceof Person) {
+				Person p = (Person) obj;
+				System.out.println(p.age);
+
+			}else {
+				System.out.println(obj);
+			}
+		}
+			ArrayList<Person> plist = new ArrayList<Person>();
+			plist.add(new person());
+			plist.add(new person());
+			for(Person p : plist) {
+				System.out.println(p.age);
+			}
+		 
+	}
+
+}

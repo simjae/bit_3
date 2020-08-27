@@ -1,0 +1,47 @@
+package defualt_package;
+/*
+게임:unit(유닛)
+unit : 공통기능(이동좌표, 이동,멈푼다): 추상화, 일반화
+unit : 이동방법은 다르다 (이동방법은 unit마다 별도의 ...구현...강제)
+abstract class 이름{abstract 이동();}
+ */
+
+abstract class Unit{
+	int x,y;
+	void stop() {
+		System.out.println("unit stop");
+	}
+	//이동(강제)
+	abstract void move(int x, int y);//추상자원
+	
+		
+	}
+class Tank extends Unit{
+
+	@Override
+	void move(int x, int y) {
+		// TODO Auto-generated method stub
+		
+		this.x = x;
+		this.y= y;
+		System.out.println("Tank 이동");
+	}
+void changeMode() {	
+	System.out.println("탱크변환모드 ");
+}
+
+
+
+
+
+}
+}
+
+public class Ex02_abstract_class {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

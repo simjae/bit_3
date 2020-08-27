@@ -1,0 +1,14 @@
+package defualt_package;
+
+public class Ex08_Wrapper_Class {
+
+	public static void main(String[] args) {
+		int i = 100;
+		Integer n = new Integer(500);
+		System.out.println("n : "+n);
+		System.out.println(n.MAX_VALUE);
+		System.out.println(n.MAX_VALUE);
+
+	}
+
+}

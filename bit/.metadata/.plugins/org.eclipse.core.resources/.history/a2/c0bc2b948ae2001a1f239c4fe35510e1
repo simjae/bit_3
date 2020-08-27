@@ -1,0 +1,32 @@
+package defualt_package;
+
+public class Ex06_String_Function {
+
+	public static void main(String[] args) {
+		String str = "hellow";
+		String concatstr = str.concat("world");
+		System.out.println(concatstr);
+		
+		boolean bo = str.contains("elle");
+		System.out.println(bo);
+		
+		
+		String str2 = "a b c d"; //  [a][][b][][c][][d]
+		System.out.println(str2.length());
+		
+		String filename = "hello java world";//[h][e][l][l]
+		System.out.println(filename.indexOf("h"));
+		System.out.println(filename.indexOf("java"));
+		System.out.println(filename.indexOf("개폭망"));//-1 
+		//신문사설 검색 ....폭망....
+		//원하는 문자열이 포함되어 있느냐 ...0보다 큰 값이.... 1개는 포함되어있다 
+		
+		
+		if(filename.indexOf("kim")!= -1 ) {
+			System.out.println("kim 하나라도 가지고 있네요 ");
+		}
+		System.out.println(filename.indexOf("a"));
+
+	}
+
+}

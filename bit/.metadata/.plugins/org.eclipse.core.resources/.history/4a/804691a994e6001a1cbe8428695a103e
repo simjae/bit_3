@@ -1,0 +1,24 @@
+package defualt_package;
+
+import java.util.ArrayList;
+
+public class Ex02_ArrayList {
+
+	public static void main(String[] args) {
+		// List 인터페이스 구현.. 순서, 중복허용 데이터 집합
+		
+		ArrayList arraylist =new ArrayList();
+		
+		arraylist.add(100);
+		arraylist.add(200);
+		arraylist.add(300);
+		
+		for(int i = 0; i < arraylist.size(); i++) {
+			System.out.println(arraylist.get(i));
+		}
+		System.out.println(arraylist.get(0));
+		arraylist.add(0,111);//이
+		System.out.println(arraylist);
+	}
+
+}

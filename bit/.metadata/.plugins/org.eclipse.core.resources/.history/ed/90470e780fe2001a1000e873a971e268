@@ -1,0 +1,81 @@
+package study;
+
+import java.io.ObjectInputStream.GetField;
+import java.util.Scanner;
+
+public class Person {
+	String name ="심재";
+
+	int age = 26;
+	boolean hasCat;
+	int phoneNums [] = new int [4];//배열은 해야함 
+
+	
+	
+	void  phonenum() {
+		this.phoneNums[0] = 6;
+		this.phoneNums[1] = 0;
+		this.phoneNums[2] = 4;
+		this.phoneNums[3] = 1;
+		
+	}
+	
+		
+
+	
+	public void printName() {
+		 System.out.println(this.name);
+	}
+	
+	public int calculateBirthYear() {
+		int presentYear = 2020;
+		this.age = presentYear - this.age+1;
+
+		return age;
+		
+	}
+
+	public boolean printHasCat( boolean userinput) {
+	
+		if(userinput == false) {
+		System.out.println("분양받으세요 ");
+		
+			
+		}else{
+			System.out.println("이쁘겠오 ");
+		}
+		
+		return userinput;
+	}
+	
+		
+		
+
+	public int addAll() {
+		int sum = 0;
+		for(int i = phoneNums[0] ; i <phoneNums.length; i++) {
+			sum += i ; 
+		}
+		return sum ;
+		
+	}
+
+
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		Person person = new Person();
+		Scanner sc = new Scanner(System.in);
+		boolean userInput= sc.nextBoolean();
+		person.printName();
+		System.out.println("2번문제 : "+ person.calculateBirthYear());
+	
+		System.out.println("3번 문제 : " + person.printHasCat(userInput));
+		System.out.println("3번 문제 : " + person.addAll());
+		
+	}
+
+}

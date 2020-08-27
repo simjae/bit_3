@@ -1,0 +1,10 @@
+package defualt_package;
+
+public class Ex10_Format_date {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
